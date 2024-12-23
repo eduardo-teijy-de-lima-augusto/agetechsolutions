@@ -658,6 +658,30 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Propaganda Início-->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const adModal = document.getElementById("ad-modal");
+      const closeAd = document.getElementById("close-ad");
+
+      // Mostra o modal automaticamente ao carregar a página
+      adModal.style.display = "flex";
+
+      // Fecha o modal ao clicar no botão de fechar
+      closeAd.addEventListener("click", () => {
+        adModal.style.display = "none";
+      });
+
+      // Fecha o modal ao clicar fora do conteúdo
+      adModal.addEventListener("click", (event) => {
+        if (event.target === adModal) {
+          adModal.style.display = "none";
+        }
+      });
+    });
+  </script>
+
 </body>
 
 </html>
