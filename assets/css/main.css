@@ -411,6 +411,10 @@ h6 {
     height: 40px;
   }
 
+  .get-quote .btn a:hover {
+    color: #25d366;
+  }
+
 }
 
 /* Navmenu - Mobile */
