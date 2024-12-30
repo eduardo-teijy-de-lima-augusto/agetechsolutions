@@ -78,12 +78,10 @@
 <body class="index-page">
 
   <!-- Modal de Propaganda -->
-  <div id="ad-modal" style="display: flex; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; justify-content: center; align-items: center;">
-    <div style="padding: 20px; text-align: center;">
-      <!-- Link ao redor da imagem -->
-      <a href="web-design" id="banner-link">
-        <img src="assets/img/promo_web.png" alt="Promoção Especial" class="img-fluid" style="max-width: 80%; height: auto;">
-      </a>
+  <div id="ad-modal" class="ad-modal">
+    <div class="modal-dialog modal-xl">
+      <span id="close-ad" class="close-ad">&times;</span>
+      <a href="web_design.html"> <img src="assets/img/promo_web.png" alt="" class="img-fluid"></a>
     </div>
   </div>
 
@@ -670,13 +668,13 @@
       const adModal = document.getElementById("ad-modal");
       adModal.style.display = "none";
     }
-  
+
     document.addEventListener("DOMContentLoaded", () => {
       const adModal = document.getElementById("ad-modal");
-      
+
       // Mostra o modal automaticamente ao carregar a página
       adModal.style.display = "flex";
-  
+
       // Fecha o modal ao clicar fora do conteúdo
       adModal.addEventListener("click", (event) => {
         if (event.target === adModal) {
