@@ -409,6 +409,7 @@ h6 {
   .get-quote .btn {
     border-color: #25d366;
     height: 40px;
+    width: 100px;
   }
 
   .get-quote .btn a:hover {
