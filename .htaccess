@@ -1,0 +1,4 @@
+# Remove index.html da URL
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/.*index\.html [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
