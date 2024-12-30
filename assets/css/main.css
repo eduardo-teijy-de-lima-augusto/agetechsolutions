@@ -406,14 +406,23 @@ h6 {
     visibility: visible;
   }
 
+  .navmenu .get-quote {
+    width: 100px;
+    color: #ffffff;
+    font-size: 14px;
+    border: 1px solid #25d366;    
+    border-radius: 10px;
+    padding: -5px;
+  }
+
   .get-quote .btn {
-    border-color: #25d366;
     height: 40px;
     width: 100px;
   }
 
-  .get-quote .btn a:hover {
-    color: #25d366;
+  .navmenu .get-quote:hover {
+    color: #ffffff;
+    background: #25d366;
   }
 
 }
