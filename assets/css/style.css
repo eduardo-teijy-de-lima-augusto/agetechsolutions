@@ -1033,6 +1033,39 @@ section {
   border-radius: 10px;
 }
 
+/* Estilos para celulares */
+@media (max-width: 768px) {
+  .hero-section .hero-data h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section .hero-data p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-section .btn-whatsapp {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .hero-section .cta-data .text {
+    font-size: 0.9rem;
+  }
+
+  .hero-section .cta-data .icon {
+    font-size: 1.2rem;
+  }
+
+  #custom-dashboards .container {
+    padding: 10px; /* Reduz os espaçamentos laterais */
+  }
+
+  #custom-dashboards .row {
+    flex-direction: column; /* Empilha os elementos */
+    gap: 20px; /* Espaçamento entre os itens */
+  }
+}
 
 
 /*--------------------------------------------------------------
