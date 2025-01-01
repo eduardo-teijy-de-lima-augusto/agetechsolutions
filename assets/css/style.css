@@ -927,6 +927,7 @@ section {
   font-size: 5rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .hero-data p {
@@ -953,7 +954,7 @@ section {
 /* Bloco amarelo centralizado */
 .cta-data {
   position: absolute;
-  bottom: 5%;
+  bottom: -2%;
   left: 50%;
   transform: translateX(-50%);
   width: 55%; /* Largura reduzida */
