@@ -900,6 +900,140 @@ section {
   padding: 1px 0 3px 0;
 }
 
+/* Seção principal */
+.hero-data {
+  position: relative;
+  width: 100%;
+  height: 85vh; /* Altura da tela */
+  background: linear-gradient(
+      rgba(0, 0, 128, 0.7),
+      rgba(0, 0, 128, 0.7)
+    ),
+    url('../img/data-bg.png'); /* Substituir pela imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -60px;
+}
+
+/* Texto principal */
+.hero-data h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-data p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Botão de WhatsApp */
+.hero-data .btn-whatsapp {
+  background-color: #fff;
+  color: #1e3867;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.hero-data .btn-whatsapp:hover {
+  background-color: #f0f0f0;
+}
+
+/* Bloco amarelo centralizado */
+.cta-data {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%; /* Largura reduzida */
+  background-color: #f7c948;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.cta-data .text {
+  font-size: 1.5rem;
+}
+
+.cta-data .icon {
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* layout-dash */
+
+.layout .layout-dash h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #37517e;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.layout-first {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+/*--------------------------------------------------------------
+# Custom Dashboard
+--------------------------------------------------------------*/
+
+.custom-dashboards {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 5rem auto; /* Centraliza horizontalmente */
+  max-width: 1200px; /* Define a largura máxima */
+}
+
+
+.custom-dashboards .section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #002D62;
+}
+
+.custom-dashboards .highlight {
+  background-color: #007BFF;
+  color: #ffffff;
+  padding: 0 5px;
+}
+
+.custom-dashboards p {
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.custom-dashboards img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
