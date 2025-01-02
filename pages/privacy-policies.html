@@ -639,6 +639,34 @@
   <!-- Main JS File -->
   <script src="/assets/js/main.js"></script>
 
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>
+      Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com o uso de
+      cookies.
+      <a href="./pages/terms-use" target="_blank">Saiba mais</a>.
+    </p>
+    <button id="accept-cookies" class="btn-accept-cookies">Aceitar</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cookieBanner = document.getElementById("cookie-banner");
+      const acceptCookiesButton = document.getElementById("accept-cookies");
+
+      // Verifica se o usuário já aceitou os cookies
+      if (!localStorage.getItem("cookiesAccepted")) {
+        cookieBanner.style.display = "flex"; // Mostra o banner
+      }
+
+      // Ao clicar no botão de aceitar
+      acceptCookiesButton.addEventListener("click", () => {
+        localStorage.setItem("cookiesAccepted", "true");
+        cookieBanner.style.display = "none"; // Oculta o banner
+      });
+    });
+  </script>
+
   <script>
     document.addEventListener("contextmenu", function (e) {
       e.preventDefault();
