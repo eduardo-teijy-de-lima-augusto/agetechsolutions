@@ -241,44 +241,62 @@ h6 {
 # Propaganda Início
 --------------------------------------------------------------*/
 
-#ad-modal {
+/* Fundo Fosco */
+.ad-modal {
+  display: none; /* Oculto por padrão */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo fosco */
   z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-#ad-content {
-  position: relative;
-  background: white;
+.ad-modal p {
+  color: #FFFFFF;
+  font-size: 22px;
+}
+
+/* Conteúdo do Modal */
+.ad-modal-content {
+  background-color: #fff;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
-  height: 90%;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#ad-image {
-  max-width: 70%;
-  height: 70%;
-}
-
-#close-ad {
+/* Botão Fechar */
+.close-ad {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  background: transparent;
-  border: none;
+  top: 10px;
+  right: 20px;
   font-size: 24px;
   font-weight: bold;
-  color: #000000;
+  color: #000;
   cursor: pointer;
-  line-height: 1;
+}
+
+/* Botão de Ação */
+.ad-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.ad-button:hover {
+  background-color: #0056b3;
 }
 
 /*--------------------------------------------------------------

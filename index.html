@@ -79,11 +79,10 @@
 <body class="index-page">
 
   <!-- Modal de Propaganda -->
-
-  <div id="ad-modal" style="display: none;">
-    <div id="ad-content">
-      <img src="assets/img/promo_web.png" id="ad-image" alt="Banner de Propaganda" style="cursor: pointer;" />
-      <button id="close-ad" aria-label="Fechar">&times;</button>
+  <div id="ad-modal" class="ad-modal">
+    <div class="modal-dialog modal-xl">
+      <span id="close-ad" class="close-ad">&times;</span>
+      <a href="./pages/web_design"> <img src="assets/img/promo_web.png" alt="" class="img-fluid"></a>
     </div>
   </div>
 
@@ -117,10 +116,9 @@
           <ul>
             <li><a href="/" class="active">Home</a></li>
             <li><a href="#about">Empresa</a></li>
-            <li class="dropdown"><a href="#"><span>Soluções</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="#"><span>Soluções</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="./pages/data-analytics">Analise de Dados</a></li>
+                <li><a href="./pages/data-analytics">Analise de Dados</a></li>                
                 <li><a href="./pages/digital-marketing">Marketing Digital</a></li>
                 <li><a href="./pages/web-design">Web Design</a></li>
               </ul>
@@ -673,36 +671,26 @@
   <!-- Propaganda Início-->
 
   <script>
+    // Função para fechar o modal
+    function closeModal() {
+      const adModal = document.getElementById("ad-modal");
+      adModal.style.display = "none";
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
       const adModal = document.getElementById("ad-modal");
-      const closeAd = document.getElementById("close-ad");
-      const adImage = document.getElementById("ad-image");
 
-      // Verifica se a URL é a home antes de mostrar o modal
-      if (window.location.pathname === "/") {
-        adModal.style.display = "flex"; // Exibe o modal
-      }
-
-      // Fecha o modal ao clicar no botão de fechar
-      closeAd.addEventListener("click", () => {
-        adModal.style.display = "none";
-      });
+      // Mostra o modal automaticamente ao carregar a página
+      adModal.style.display = "flex";
 
       // Fecha o modal ao clicar fora do conteúdo
       adModal.addEventListener("click", (event) => {
         if (event.target === adModal) {
-          adModal.style.display = "none";
+          closeModal();
         }
-      });
-
-      // Redireciona para "design-web" ao clicar na imagem
-      adImage.addEventListener("click", () => {
-        window.location.href = "./pages/web-design";
       });
     });
   </script>
-
-  <!-- Propaganda Fim -->
 
   <!-- Cookie Banner -->
   <div id="cookie-banner" class="cookie-banner">
